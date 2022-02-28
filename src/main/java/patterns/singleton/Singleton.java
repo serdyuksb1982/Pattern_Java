@@ -1,12 +1,27 @@
 package patterns.singleton;
 
 public class Singleton {
+    /**
+     *    Singleton:
+     * ---------------------------
+     * - instance: Singleton;
+     * ---------------------------
+     * - Singleton();
+     * + getInstance(): Singleton
+     * ---------------------------
+     */
     private Singleton() {}
-    private static Singleton singleton;
+    private static volatile Singleton singleton;
 
     public static Singleton getSingleton() {
+
         if (singleton == null) {
-            singleton = new Singleton();
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new Singleton();
+                }
+            }
+
         }
         return singleton;
     }
