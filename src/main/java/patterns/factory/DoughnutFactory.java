@@ -1,9 +1,9 @@
-package patterns.singleton.factory;
+package patterns.factory;
 
 public class DoughnutFactory {
 
     public Doughnut getDoughnut(DoughnutTypes type) {
-        Doughnut doughnut = null;
+        Doughnut doughnut;
         switch (type) {
             case ALMOND:
                 doughnut = new AlmondDoughnut();

@@ -1,4 +1,4 @@
-package patterns.singleton.factory;
+package patterns.factory;
 
 public enum DoughnutTypes {
     CHERRY,
