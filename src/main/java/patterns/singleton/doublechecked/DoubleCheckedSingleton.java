@@ -1,4 +1,4 @@
-package patterns.singleton.DoubleChecked;
+package patterns.singleton.doublechecked;
 
 public class DoubleCheckedSingleton {
     /**

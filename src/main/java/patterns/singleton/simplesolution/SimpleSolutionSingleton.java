@@ -1,4 +1,4 @@
-package patterns.singleton.SimpleSolution;
+package patterns.singleton.simplesolution;
 
 public class SimpleSolutionSingleton {
     private static final SimpleSolutionSingleton INSTANCE = new SimpleSolutionSingleton ();
